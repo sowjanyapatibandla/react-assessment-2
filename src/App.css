@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height:100vh;
+  background-color: pink;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.feedback__container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+.feedback__container>h1{
+  color: rgb(52, 3, 3);
+  font-size: 3rem;
+  margin: 2rem;
+  border-bottom: 2px solid blueviolet;
+  padding: 1rem;
+}
+label{
+  font-size: 1.3rem;
+  color: blueviolet;
+  padding-right: 3rem;
+}
+.feedback__container form{
+  display: flex;
+  height: 25vh;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2rem;
+}
+.input__container{
+  display: flex;
+  justify-content: space-between;
+}
+.input__container input{
+  width: 15rem;
+  height: 2rem;
+  padding: 0.20rem;
+}
+.submitbtn{
+  width: 70%;
+  padding: 0.5rem 1rem;
+  font-weight: 1000;
+  margin:auto;
+  background-color: greenyellow;
   color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 2px solid yellow;
 }
-
-.App-link {
-  color: #61dafb;
+.submitbtn:hover{
+  color: white;
+  background-color: goldenrod;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit__container{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  background-color: black;
+  margin-top: 7rem;
+  min-height: 30vh;
+}
+.item__data{
+  display: flex;
+  background-color: slateblue;
+  font-size: 1.1rem;
+  font-weight: 1000;
+  border: 3px solid red;
+  margin: 1rem 0;
+  height: 3rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+}
+.item__data p{
+  padding: 1rem;
+  font-family: 'Roboto',sans-serif;
+}
+.submit__item{
+  min-width: 615px;
 }
